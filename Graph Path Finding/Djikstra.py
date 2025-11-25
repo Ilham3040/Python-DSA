@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[22]:
-
-
 order = {
     'Pak Handoko': 1,
     'Pak Sunarno': 2,
@@ -19,10 +13,6 @@ order = {
     'Pak Wirawan': 13,
     'Pak Basuki': 14
 }
-
-
-# In[23]:
-
 
 connection = {
     "Wirawan" : [("Widodo", 5),("Basuki", 4)],
@@ -40,9 +30,6 @@ connection = {
     "Purwoadi" : [("Hadi",4),("Sumono",4)],
     "Sumono" : [("Joko",3),("Sunarno",6),("Purwoadi",4)]
 }
-
-
-# In[24]:
 
 
 def dijkstra(graph, start, destination):
@@ -84,24 +71,11 @@ def dijkstra(graph, start, destination):
     return path, distances[destination]
 
 
-# In[21]:
-
-
 shortest_path_to_joko = dijkstra(connection, "Wirawan", "Joko")
 print(f"The shortest distance from Wirawan to Joko is: {shortest_path_to_joko}")
 
 shortest_path_to_maryono = dijkstra(connection, "Handoko", "Sumono")
 print(f"The shortest distance from Wirawan to Maryono is: {shortest_path_to_maryono}")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 

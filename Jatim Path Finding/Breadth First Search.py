@@ -14,7 +14,6 @@ connection = {
     'Suwano': ['Sutrisno', 'Sumono']
 }
 
-
 def bfs(graph,start,end):
     if start not in graph or end not in graph:
         return None
@@ -38,10 +37,7 @@ def bfs(graph,start,end):
                 queue.append((neighbor, path + [neighbor]))
 
     return None
-
-
+  
 path_from_basuki_to_suwano = bfs(connection,"Basuki","Suwano")
 
-
 print(path_from_basuki_to_suwano)
-
